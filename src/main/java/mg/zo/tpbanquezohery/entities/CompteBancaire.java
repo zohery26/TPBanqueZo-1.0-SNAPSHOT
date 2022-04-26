@@ -26,10 +26,6 @@ public class CompteBancaire implements Serializable {
         return id;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
     private String nom;
 
     private int solde;
@@ -53,6 +49,9 @@ public class CompteBancaire implements Serializable {
     public CompteBancaire(String nom, int solde) {
         this.nom = nom;
         this.solde = solde;
+    }
+
+    public CompteBancaire() {
     }
 
     public void deposer(int montant) {
